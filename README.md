@@ -38,3 +38,10 @@ OUTCOME:
 
 
 I HAVE SUCCESSFULLY CREATED A FULLY FUNCTIONAL WEBPAGE THAT FETCHES AND DISPLAYS BOTH WEATHER DATA AND LATEST NEWS ARTICLES.
+
+OUTPUT:
+
+![Image](https://github.com/user-attachments/assets/f9f2e5ae-85b2-449d-961a-65fa33e99234)
+![Image](https://github.com/user-attachments/assets/7e510243-f1a2-4af8-8021-c918f8740990)
+![Image](https://github.com/user-attachments/assets/22f62796-15f6-49e3-96ad-9309537c80f1)
+![Image](https://github.com/user-attachments/assets/cb780b49-4f85-4241-a448-94d4707685a1)
