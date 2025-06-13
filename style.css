@@ -1,0 +1,142 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+  color: #fff;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 40px 20px;
+  transition: background 0.5s ease, color 0.5s ease;
+}
+
+body.dark-mode {
+  background: linear-gradient(to right, #2c3e50, #4ca1af);
+  color: #111;
+}
+
+.container {
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(12px);
+  padding: 30px;
+  border-radius: 20px;
+  max-width: 800px;
+  width: 100%;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.4);
+}
+
+h1 {
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+input {
+  padding: 12px;
+  width: 65%;
+  border-radius: 10px;
+  border: none;
+  margin-bottom: 15px;
+  font-size: 1rem;
+  outline: none;
+}
+
+button {
+  padding: 12px 20px;
+  background: #00bcd4;
+  border: none;
+  border-radius: 10px;
+  color: white;
+  font-weight: 600;
+  margin-left: 10px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+button:hover {
+  background: #0097a7;
+}
+
+hr {
+  margin: 30px 0;
+  border-color: #444;
+}
+
+#weatherResult {
+  text-align: center;
+  font-size: 1.1rem;
+  margin-top: 20px;
+}
+
+#newsResult {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.news-card {
+  background: rgba(255, 255, 255, 0.08);
+  border-radius: 15px;
+  padding: 20px;
+  color: #fff;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  transition: transform 0.2s ease;
+}
+
+.news-card:hover {
+  transform: translateY(-5px);
+}
+
+.news-card h3 {
+  margin: 0 0 10px;
+}
+
+.news-card p {
+  font-size: 0.95rem;
+  color: #e0e0e0;
+}
+
+.news-card a {
+  color: #4fc3f7;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.news-card a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive Enhancements */
+@media (max-width: 600px) {
+  .container {
+    padding: 20px;
+  }
+
+  input,
+  button {
+    width: 100%;
+    margin: 5px 0;
+  }
+
+  button {
+    margin-left: 0;
+  }
+}
+
+/* Loader style */
+#loader {
+  text-align: center;
+  margin-top: 20px;
+  font-weight: bold;
+  color: #ffcc00;
+  display: none;
+}
